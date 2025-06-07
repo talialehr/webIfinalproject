@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+    
+    <title>Menu</title>
+    
+    <link href="css/project1.css" rel="stylesheet" type="text/css">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    
+    <script src="https://kit.fontawesome.com/0722d4a47e.js" crossorigin="anonymous"></script>
+
+    </head>
+    
+    <body>
+        
+        <main>
+        
+            <header>
+                <h1>Menu</h1>
+            </header>
+<div class="topnav" id="myTopnav">
+<a href="index.html">Home</a>
+<a href="menu.html">Menu</a> 
+<a href="about.html">About Us</a>
+<a href="events.html">Events</a>
+  <div class="dropdown">
+    <button class="dropbtn">More of Us!
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+<a href="recipes.html">Recipes</a>
+<a href="ourproducts.html">Gallery</a>
+<a href="giftcards.html">Gift Cards</a>
+ </div>
+    </div>
+   
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+            
+<div class="search">
+<script type="text/javascript">
+ 
+    // Google Internal Site Search script- By JavaScriptKit.com (http://www.javascriptkit.com)
+    // For this and over 400+ free scripts, visit JavaScript Kit- http://www.javascriptkit.com/
+    // This notice must stay intact for use
+   
+    //Enter domain of site to search.
+    var domainroot="https://www.thebaltimorebanner.com/culture/food-drink/baltimore-best-coffee-shops-TWDGN4PHE5GLBLNQ7Q2NVDSGSI/"
+   
+    function Gsitesearch(curobj){
+    curobj.q.value="site:"+domainroot+" "+curobj.qfront.value
+    }
+   
+    </script>
+   
+    <form action="http://www.google.com/search" method="get" onSubmit="Gsitesearch(this)">
+   
+    <p>Search:<br />
+    <input name="q" type="hidden" />
+    <input name="qfront" type="text" style="width: 180px" /> <input type="submit" value="Search" /></p>
+   
+    </form>
+ 
+</div>
+                        
+             <figure>
+                 
+                <img src="images/girlonstoolimage.jpg" style="float:left" width="50%" height="auto">
+                <img src="images/coffeebeansimage.jpg" style="float:right" width="50%" height="auto">
+                 
+                </figure>
+            
+                          <h1>Our Menu</h1>
+
+            
+            	<div class="contents">
+        
+      <!--Add HTML code for Accordion below this line-->
+        
+        <button class="accordion">Espresso Beverages</button>
+<div class="panel">
+    
+<p>Espresso Shot:</p>
+  <p> Single: $2.50 </p>
+  <p> Double: $4.00</p>
+    
+    <br>
+    
+  <p>Latte(Iced/Hot):</p>
+  <p> 12oz: $4.00 </p>
+  <p> 16oz: $6.00</p>
+    
+    <br>
+    
+  <p>Americano:</p>
+  <p> 12oz: $3.00 </p>
+  <p> 16oz: $4.00</p>
+    
+</div>
+
+<button class="accordion">Fresh Brewed Coffee</button>
+<div class="panel">
+    
+    <p>Iced/Hot:</p>
+  <p> 12oz: $3.00 </p>
+  <p> 16oz: $4.50</p>
+
+</div>
+
+<button class="accordion">Teas</button>
+<div class="panel">
+    
+ <p>All teas available iced or hot</p>
+    
+    <br>
+    
+  <p>12oz: $3.25 </p>
+  <p>16oz: $4.00</p>
+    
+    <br>
+    
+  <p>Green Tea</p>
+  <p>Black Tea</p>
+  <p>Earl Grey Tea</p>
+  <p>Vanilla Chamonille Tea</p>
+    
+  <p>Herbal Teas: Seasonal</p>
+    
+</div>
+
+<button class="accordion">Homemade Pastries</button>
+<div class="panel">
+  
+  <p>Baked Fresh Daily</p>
+    
+    <br>
+    
+  <p>Croissant: $3.50</p>
+  <p>Blueberry Muffin: $4.00</p>
+ <p>Scones: $3.00</p>
+     <p>Chocolate Chip Cookies: $2.50</p>
+    
+    <br>
+    
+     <p>Seasonal pastry</p>
+     <p>Gingerbread Cookies: $3.50</p>
+
+    
+</div>
+        
+<button class="accordion">Milk and Syrup Selection</button>
+<div class="panel">
+    
+<p>Milk and Alternatives</p>
+    
+    <br>
+    
+  <p>Whole, Skim, Oat, Almond, Soy</p>
+    
+    <br>
+    
+     <p>Syrup Selections</p>
+    
+    <br>
+    
+     <p>Vanilla, Caramel, Hazelnut, Mocha, Maple</p>
+     <p>Seasonal: Gingerbread</p>
+ 
+    
+</div>
+        
+        
+  </div>
+            
+                  <footer>
+            
+                <address><a href= "mailto:tclehr@loyola.edu">Want to see something specific on the menu? Let us know!</a></address>
+                
+                <br>
+                    
+                 <a href="https://x.com/i/flow/login?redirect_after_login=%2Fcoffeeshopworld"><i class="fa-brands fa-square-twitter fa-2x" style= “margin-right:20px;></i></a>
+                
+                <a href="https://www.instagram.com/coffeeshopsoftheworld/?hl=en"><i class="fa-brands fa-square-instagram fa-2x" style= "margin-right: 20px;"></i></a>
+                
+            </footer>
+            
+                        <script>
+            
+            var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+} 
+                </script>
+            
+        </body>
+        </html>     

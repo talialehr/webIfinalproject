@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+    
+    <title>Menu</title>
+    
+    <link href="css/project1.css" rel="stylesheet" type="text/css">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/0722d4a47e.js" crossorigin="anonymous"></script>
+    </head>
+    
+    <body>
+        
+        <main>
+        
+            <header>
+                <h1>Gallery</h1>
+            </header>
+          
+<div class="topnav" id="myTopnav">
+<a href="index.html">Home</a>
+<a href="menu.html">Menu</a> 
+<a href="about.html">About Us</a>
+<a href="events.html">Events</a>
+  <div class="dropdown">
+    <button class="dropbtn">More of Us!
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+<a href="recipes.html">Recipes</a>
+<a href="ourproducts.html">Gallery</a>
+<a href="giftcards.html">Gift Cards</a>
+ </div>
+    </div>
+   
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+<div class="search">
+<script type="text/javascript">
+ 
+    // Google Internal Site Search script- By JavaScriptKit.com (http://www.javascriptkit.com)
+    // For this and over 400+ free scripts, visit JavaScript Kit- http://www.javascriptkit.com/
+    // This notice must stay intact for use
+   
+    //Enter domain of site to search.
+    var domainroot="https://www.thebaltimorebanner.com/culture/food-drink/baltimore-best-coffee-shops-TWDGN4PHE5GLBLNQ7Q2NVDSGSI/"
+   
+    function Gsitesearch(curobj){
+    curobj.q.value="site:"+domainroot+" "+curobj.qfront.value
+    }
+   
+    </script>
+   
+    <form action="http://www.google.com/search" method="get" onSubmit="Gsitesearch(this)">
+   
+    <p>Search:<br />
+    <input name="q" type="hidden" />
+    <input name="qfront" type="text" style="width: 180px" /> <input type="submit" value="Search" /></p>
+   
+    </form>
+ 
+</div>
+           
+            
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+    
+  <div class="mySlides fade">
+    <img src="images/coffeeshopconvo.jpg" style="width:100%">
+  </div>
+    
+  <div class="mySlides fade">
+    <img src="images/coffeebeansproduct.jpg" style="width:100%">
+  </div>
+    
+ <div class="mySlides fade">
+    <img src="images/differentcoffees.jpg" style="width:100%">
+  </div>
+    
+      
+      
+  </div>
+
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>   
+
+            <div class=".form">
+
+
+  
+            <footer>
+              <address><a href= "mailto:tclehr@loyola.edu"> Contact Us!</a></address>
+       
+                      <br>
+                    
+                 <a href="https://x.com/i/flow/login?redirect_after_login=%2Fcoffeeshopworld"><i class="fa-brands fa-square-twitter fa-2x" style= “margin-right:20px;></i></a>
+                
+                <a href="https://www.instagram.com/coffeeshopsoftheworld/?hl=en"><i class="fa-brands fa-square-instagram fa-2x" style= "margin-right: 20px;"></i></a>
+                
+                
+            </footer>
+           
+        
+        </main>
+            
+  <script>        
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none"; 
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block"; 
+  dots[slideIndex-1].className += " active";
+}
+
+            </script> 
+            
+            
+        </body>
+        </html>     
